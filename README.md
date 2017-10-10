@@ -4,6 +4,7 @@ Learning ZURB Foundation + Exercises
 ## Log
 28/9/17 Intro ZURB Foundation and custom download
 9/10/17 Menu
+10/10/17 Carousel
 
 ## Sources
 https://foundation.zurb.com/  
