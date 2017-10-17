@@ -6,6 +6,7 @@ Learning ZURB Foundation + Exercises
 9/10/17 Menu  
 10/10/17 Carousel  
 14/10/17 Buttons  
+17/10/17 Form Validation Abide
 
 ## Sources
 ### General
@@ -17,3 +18,6 @@ https://www.youtube.com/watch?v=hfBs96BJz3E
 https://foundation.zurb.com/templates.html   
 ### Buttons
 https://foundation.zurb.com/sites/docs/button.html  
+### Abide
+https://foundation.zurb.com/sites/docs/abide.html  
+https://foundation.zurb.com/sites/docs/v/4.3.2/components/abide.html

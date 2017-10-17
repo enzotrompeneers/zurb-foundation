@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="grid-container">
+        <h1>Form Validation by abide</h1>
+        <hr>
+
+        <form data-abide novalidate>
+          <div data-abide-error class="alert callout" style="display: none;">
+            <p><i class="fi-alert"></i> Error Message</p>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label>Date
+                <input type="text" placeholder="YYYY-MM-DD" aria-describedby="exampleHelpText" required pattern="date">
+                <span class="form-error">
+                  Write a valid date
+                </span>
+              </label>
+              <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+            </div>
+
+            <div class="small-12 columns">
+              <label>Only numbers
+                <input type="text" placeholder="1234567890" aria-describedby="exampleHelpText" required pattern="number">
+                <span class="form-error">
+                  Only numbers allowed
+                </span>
+              </label>
+              <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+            </div>
+
+            <div class="row">
+            <div class="small-12 columns">
+              <label>E-mail
+                <input type="text" placeholder="name@mail.com" aria-describedby="exampleHelpText" required pattern="email">
+                <span class="form-error">
+                  Write a valid email address
+                </span>
+              </label>
+              <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+            </div>
+
+            <div class="small-12 columns">
+              <label>Password Required
+                <input type="password" id="password" placeholder="your password" aria-describedby="exampleHelpText" required >
+                <span class="form-error">
+                  Password is required
+                </span>
+              </label>
+              <p class="help-text" id="exampleHelpText">Enter password</p>
+            </div>
+
+            <div class="small-12 columns">
+              <label>Re-enter Password
+                <input type="password" placeholder="Re-enter your password" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
+                <span class="form-error">
+                  Password does not match
+                </span>
+              </label>
+              <p class="help-text" id="exampleHelpText2">Re-enter your password</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-6 columns">
+              <label>Not required, only url pattern
+              <input type="text" placeholder="https://google.com" pattern="url">
+            </div>
+            <div class="large-6 columns">
+              <label>Not required, only website pattern
+                <input type="text" placeholder="google.be" pattern="website">
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-6 columns">
+              <label>Choose an option, Can't be blank
+                <select id="select" required>
+                  <option value=""></option>
+                  <option value="cat">cat</option>
+                  <option value="dog">dog</option>
+                  <option value="horse">horse</option>
+                </select>
+              </label>
+            </div>
+
+            <fieldset class="large-6 columns">
+              <legend>dog is required</legend>
+              <input id="cat" type="checkbox"><label for="cat">cat</label>
+              <input id="dog" type="checkbox" required><label for="dog">dog</label>
+              <input id="horse" type="checkbox"><label for="horse">horse</label>
+            </fieldset>
+          </div>
+
+          <div class="row">
+            <fieldset class="large-6 columns">
+              <legend>choose a color</legend>
+              <input type="radio" name="color" value="red" id="red"><label for="red">red</label>
+              <input type="radio" name="color" value="blue" id="blue" required><label for="blue">blue</label>
+              <input type="radio" name="color" value="green" id="green"><label for="green">green</label>
+            </fieldset>
+          </div>
+
+          <div class="row">
+            <fieldset class="large-6 columns">
+              <button class="button" type="submit" value="Submit">Submit button</button>
+            </fieldset>
+            <fieldset class="large-6 columns">
+              <button class="button" type="reset" value="Reset">Reset button</button>
+            </fieldset>
+          </div>
+        </form>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
