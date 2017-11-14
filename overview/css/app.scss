@@ -1,0 +1,18 @@
+@import 'variables';
+
+.cell {
+    background-color: $lightgrey;
+}
+.runner {
+    background: $lightgrey;
+    height: 6.25rem;
+}
+header {
+    @extend .runner;
+    margin-bottom: 2rem;
+}
+footer {
+    @extend .runner;
+    margin-top: 2rem;
+}
+
