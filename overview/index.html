@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -9,16 +9,30 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+	<header>
+		<div class="grid-container text-center">
+			<h1>Foundation Overview</h1>
+		</div>
+	</header>
 
     <div class="grid-container text-center">
-		<h1>Het gridsysteem</h1>
+		<h1>Het gridsysteem (XY)</h1>
+		<p>
+			<b>Syntax voor grid container</b>: <code>&lt;div class="grid-container"&gt;&lt;/div&gt;</code><br>
+			<b>Syntax voor grid container stretched</b>: <code>&lt;div class="grid-container fluid"&gt;&lt;/div&gt;</code> <br>
+			<b>Syntax voor grid container content centered</b>: <code>&lt;div class="grid-container text-center"&gt;&lt;/div&gt;</code> <br>
+			<b>Syntax voor grid container volledige width</b>: <code>&lt;div class="grid-container full"&gt;&lt;/div&gt;</code> <br>
+		</p>
 		<img src="graphics/small-medium-large.png" alt="small-medium-large">
-		<hr>
 
 		<h2>Schermgrootte</h2>
-		<p><b>Syntax</b>: cell medium-6 large-4</p>
+		<p>
+			<b>Syntax voor gutter margin</b>: <code>&lt;div class="grid-x grid-margin-x grid-margin-y"&gt;&lt;/div&gt;</code> <br>
+			<b>Syntax voor gutter padding</b>: <code>&lt;div class="grid-x grid-padding-x grid-padding-y"&gt;&lt;/div&gt;</code> <br>
+			<b>Syntax voor gridsysteem</b>: <code>&lt;div class="cell medium-6 large-4"&gt;&lt;/div&gt;</code> <br>
+		</p>
 
-		<div class="grid-x grid-margin-x">
+		<div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y"> 
 			<div class="cell medium-6 large-4">
 				<b>Groot scherm</b><br>
 				kolomgrootte: 4 <br>
@@ -42,12 +56,211 @@
 				12 / 12 = 1 <br>
 				1 kolom per rij
 			</div>
+
+			<div class="shrink cell">
+				<b>Kleine cell: </b> shrink cell<br>
+			</div>
+			<div class="auto cell">
+				<b>Opvullende cell: </b> auto cell <br>
+			</div>
+			
+		</div>
+		<hr>
+
+		<h1>Typography</h1> <br>
+		<h1>h1 header (groot: 3rem, klein: 1.5rem)</h1>
+		<h2>h2 header (groot: 2.5rem, klein: 1.25rem)</h2>
+		<h3>h3 header (groot: 1.9375rem, klein: 1.1875rem)</h3>
+		<h4>h4 header (groot:  1.5625rem, klein: 1.125rem)</h4>
+		<h5>h5 header (groot: 1.25rem, klein: 1.0625rem)</h5>
+		<h6>h6 header (groot: 1rem, klein: 1rem)</h6> <br>
+		<hr>
+
+		<h1>Controls</h1>
+
+		<h2>kleuren</h2>
+		<p>
+			<b>Syntax voor button primary</b>: <code>&lt;a class="button primary" href="#"&gt;&lt;/a&gt;</code><br>
+			<b>Syntax voor button secondary</b>: <code>&lt;a class="button secondary" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button succes</b>: <code>&lt;a class="button success" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button alert</b>: <code>&lt;a class="button alert" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button warning</b>: <code>&lt;a class="button warning" href="#"&gt;&lt;/a&gt;</code> <br>
+		</p>
+        <a class="button primary" href="#">primary</a>
+        <a class="button secondary" href="#">secondary</a>
+        <a class="button success" href="#">success</a>
+        <a class="button alert" href="#">alert</a>
+		<a class="button warning" href="#">warning</a>
+		
+		<h2>Hollow</h2>
+		<p>
+			<b>Syntax voor button hollow primary</b>: <code>&lt;a class="button hollow primary" href="#"&gt;&lt;/a&gt;</code><br>
+			<b>Syntax voor button hollow secondary</b>: <code>&lt;a class="button hollow secondary" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button hollow success</b>: <code>&lt;a class="button hollow success" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button hollow alert</b>: <code>&lt;a class="button hollow alert" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button hollow warning</b>: <code>&lt;a class="button hollow warning" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button hollow disabled</b>: <code>&lt;a class="button hollow" href="#" disabled&gt;&lt;/a&gt;</code> <br>
+		</p>
+        <a class="button hollow primary" href="#">primary</a>
+        <a class="button hollow secondary" href="#">secondary</a>
+        <a class="button hollow success" href="#">success</a>
+        <a class="button hollow alert" href="#">alert</a>
+        <a class="button hollow warning" href="#">warning</a>
+        <a class="button hollow" href="#" disabled>disabled</a>
+
+		<h2>Grootte</h2>
+		<p>
+			<b>Syntax voor button tiny</b>: <code>&lt;a class="button tiny" href="#"&gt;&lt;/a&gt;</code><br>
+			<b>Syntax voor button small</b>: <code>&lt;a class="button small" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button normal</b>: <code>&lt;a class="button" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button large</b>: <code>&lt;a class="button large" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button large</b>: <code>&lt;a class="button expanded" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button expanded</b>: <code>&lt;a class="button expanded" href="#"&gt;&lt;/a&gt;</code> <br>
+		</p>
+        <a class="button tiny" href="#">tiny</a>
+        <a class="button small" href="#">small</a>
+        <a class="button" href="#">button</a>
+        <a class="button large" href="#">large</a>
+        <a class="button expanded" href="#">expanded</a>
+
+		<h2>clear</h2>
+		<p>
+			<b>Syntax voor button primary clear</b>: <code>&lt;a class="button primary clear" href="#"&gt;&lt;/a&gt;</code><br>
+			<b>Syntax voor button secondary clear</b>: <code>&lt;a class="button secondary clear" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button success clear</b>: <code>&lt;a class="button success clear" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button alert clear</b>: <code>&lt;a class="button alert clear" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button warning clear</b>: <code>&lt;a class="button warning clear" href="#"&gt;&lt;/a&gt;</code> <br>
+			<b>Syntax voor button disabled clear</b>: <code>&lt;a class="button clear" href="#" disabled&gt;&lt;/a&gt;</code> <br>
+		</p>
+        <a class="button primary clear" href="#">primary</a>
+        <a class="button secondary clear" href="#">secondary</a>
+        <a class="button success clear" href="#">success</a>
+        <a class="button alert clear" href="#">alert</a>
+        <a class="button warning clear" href="#">warning</a>
+        <a class="button clear" href="#" disabled>disabled</a>
+
+		<h2>Dropdown arrow</h2>
+		<p>
+			<b>Syntax voor button dropdown</b>: <code>&lt;a class="button dropdown" href="#"&gt;&lt;/a&gt;</code><br>
+		</p>
+		<a class="button dropdown">dropdown</a>
+		<hr>
+
+		<h2>Meldingen</h2>
+		<div class="callout success" data-closable="slide-out-left">
+			<p>Succes bericht (schuift links weg)</p>
+			<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+				<span aria-hidden="true">&times;</span>
+			</button>
 		</div>
 
+		<div class="callout alert" data-closable="slide-out-right">
+			<p>Alert bericht (schuift rechts weg)</p>
+			<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="callout warning" data-closable>
+			<p>Warning bericht (verdwijnt)</p>
+			<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<hr>
 		
-    </div>
+		<h2>Sliders</h2>
+		<div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y"> 
+			<div class="cell medium-6 large-4">
+				<h3>Horizontaal</h3>
+				<div class="slider" data-slider data-initial-start="50" data-step="1" data-position-value-function="log" data-non-linear-base="5">
+					<span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="slider-output"></span>
+				</div>
+				<input type="number" id="slider-output">
+			</div>
+
+			<div class="cell medium-6 large-4">
+				<h3>Verticaal</h3>
+				<div class="slider vertical" data-slider data-initial-start="25" data-end="200" data-vertical="true">
+					<span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+					<span class="slider-fill" data-slider-fill></span>
+					<input type="hidden">
+				</div>
+			</div>
+
+			<div class="cell medium-6 large-4">
+				<h3>Bereik</h3>
+				<div class="slider" data-slider data-initial-start="25" data-initial-end="75">
+					<span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+					<span class="slider-fill" data-slider-fill></span>
+					<span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+					<input type="hidden">
+					<input type="hidden">
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<h2>Schakelaars</h2>
+		<div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y"> 
+			<div class="cell medium-6 large-4">
+				<h3>Aan/Uit</h3>
+				<div class="switch">
+					<input class="switch-input" id="switch-light" type="checkbox" name="switch-light">
+					<label class="switch-paddle" for="switch-light">
+						<span class="show-for-sr">Switch Light</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="cell medium-6 large-4">
+				<h3>Geslacht</h3>
+				<div class="switch large">
+					<input class="switch-input" id="geslacht" type="checkbox" name="geslacht">
+					<label class="switch-paddle" for="geslacht">
+						<span class="show-for-sr">Geslacht?</span>
+						<span class="switch-active" aria-hidden="true">M</span>
+						<span class="switch-inactive" aria-hidden="true">V</span>
+					</label>
+				</div>
+			</div>
+
+			<div class="cell medium-6 large-4">
+				<h2>Lift</h2>
+				<div class="switch">
+					<input class="switch-input" id="first-floor" type="radio" name="elevator">
+					<label class="switch-paddle" for="first-floor">
+						<span class="show-for-sr">Eerste verdieping</span>
+						<span class="switch-active" aria-hidden="true">1</span>
+					</label>
+				</div>
+
+				<div class="switch">
+					<input class="switch-input" id="ground-zero" type="radio" checked name="elevator">
+					<label class="switch-paddle" for="ground-zero">
+						<span class="show-for-sr">Gelijksvloers</span>
+						<span class="switch-active" aria-hidden="true">0</span>
+					</label>
+				</div>	
+
+				<div class="switch">
+					<input class="switch-input" id="basement" type="radio" name="elevator">
+					<label class="switch-paddle" for="basement">
+						<span class="show-for-sr">Kelder</span>
+						<span class="switch-active" aria-hidden="true">-1</span>
+					
+					</label>
+				</div>	
+			</div>
+		</div>
 
 
+	</div>
+	
+	<footer>
+		<div class="grid-container text-center">
+			<h1>Footer</h1>
+		</div>
+	</footer>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
