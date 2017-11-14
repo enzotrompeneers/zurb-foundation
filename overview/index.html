@@ -253,7 +253,7 @@
 		</div>
 		<hr>
 
-		<h2>Navigatie</h2>
+		<h1>Navigatie</h1>
 		<p>
 			<b>Syntax voor menu</b>: <code>&lt;ul class="menu"&gt;&lt;/ul&gt;</code><br>
 			<b>Syntax voor menu rechts uitgelijnd</b>: <code>&lt;ul class="menu align-right"&gt;&lt;/ul&gt;</code><br>
@@ -265,18 +265,89 @@
 			<b>Syntax voor tekst in menu</b>: <code>&lt;li class="menu-text"&gt;&lt;/li&gt;</code><br>
 			<b>Syntax voor iconen in menu</b>: <code>&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fi-list"&gt;&lt;/i&gt;&lt;span&gt;Home&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</code><br>
 			<b>Syntax voor positie iconen</b>: <code>&lt;ul class="menu icons icon-top"&gt;&lt;/ul&gt;</code><br>
-			<b>Syntax voor menu zonder padding en kleurverandering</b>: <code>&lt;ul class="menu simple"&gt;&lt;/ul&gt;</code><br>
-			
+			<b>Syntax voor dropdown menu</b>: <code>&lt;ul class="menu dropdown" data-dropdown-menu&gt;&lt;/ul&gt;</code><br>
+			<b>Syntax voor dropdown menu verticaal</b>: <code>&lt;ul class="menu dropdown vertical" data-dropdown-menu&gt;&lt;/ul&gt;</code><br>
+			<b>Syntax voor dropdown menu flash voorkomen door js script</b>: <code>&lt;li class="is-dropdown-submenu-parent"&gt;&lt;/li&gt;</code><br>
+			<b>Syntax voor dropdown menu</b>: <code>&lt;ul class="menu dropdown" data-dropdown-menu&gt;&lt;/ul&gt;</code><br>
+			<b>Syntax voor dropdown menu</b>: <code>&lt;ul class="menu dropdown" data-dropdown-menu&gt;&lt;/ul&gt;</code><br>
+			<b>Syntax voor dropdown menu</b>: <code>&lt;ul class="menu dropdown" data-dropdown-menu&gt;&lt;/ul&gt;</code><br>
 			
 		</p>
-		<ul class="menu align-center expanded icons icon-top">
+		
+		<ul class="menu align-center expanded icons icon-top dropdown" data-dropdown-menu>
 			<li class="is-active"><a href="#"><i class="fi-list"></i><span>Home</span></a></li>
 			<li><a href="#"><i class="fi-list"></i><span>Info</span></a></li>
 			<li class="menu-text">Foundation</li>
-			<li><a href="#"><i class="fi-list"></i><span>Over</span></a></li>
+			<li class="is-dropdown-submenu-parent">
+				<a href="#"><i class="fi-list"></i><span>Over</span></a>
+				<ul class="menu">
+					<li><a href="#">Wie</a></li>
+					<li><a href="#">Wat</a></li>
+					<li><a href="#">Waar</a></li>
+					<li><a href="#">Wanneer</a></li>
+					<li><a href="#">Waarom</a></li>
+				</ul>
+			</li>
 			<li><a href="#"><i class="fi-list"></i><span>Contact</span></a></li>
 		</ul>
+		<hr>
 
+		<h2>Top Bar</h2>
+		<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+			<button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+			<div class="title-bar-title">Menu</div>
+		</div>
+		<div class="top-bar" id="responsive-menu">
+			<div class="top-bar-left">
+				<ul class="dropdown menu" data-dropdown-menu>
+				<li class="menu-text">Foundation</li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Info</a></li>
+				<li class="has-submenu">
+					<a href="#">Over</a>
+					<ul class="submenu menu vertical" data-submenu>
+							<li><a href="#">Wie</a></li>
+							<li><a href="#">Wat</a></li>
+							<li><a href="#">Waar</a></li>
+							<li><a href="#">Wanneer</a></li>
+							<li><a href="#">Waarom</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="top-bar-right">
+				<ul class="menu">
+				<li><input type="search" placeholder="Zoeken"></li>
+				<li><button type="button" class="button">Zoeken</button></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+
+		<h2>Responsive</h2>
+		<ul class="vertical medium-horizontal menu expanded">
+			<li><a href="#"><i class="fi-list"></i> <span>Home</span></a></li>
+			<li><a href="#"><i class="fi-list"></i> <span>Info</span></a></li>
+			<li><a href="#"><i class="fi-list"></i> <span>Ons</span></a></li>
+			<li><a href="#"><i class="fi-list"></i> <span>Contact</span></a></li>
+		</ul>
+		<hr>
+
+		<ul class="menu expanded" data-magellan>
+				<li><a href="#first">First Arrival</a></li>
+				<li><a href="#second">Second Arrival</a></li>
+				<li><a href="#third">Third Arrival</a></li>
+			  </ul>
+			  
+			  <!-- Add content where magellan will be linked -->
+			  <div class="sections">
+				<section id="first" data-magellan-target="first">First Section</section>
+				<section id="second" data-magellan-target="second">Second Section</section>
+				<section id="third" data-magellan-target="third">Third Section</section>
+			  </div>
+
+		
 
 
 	</div>
