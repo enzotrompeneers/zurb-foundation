@@ -11,6 +11,10 @@ Learning ZURB Foundation + Exercises
 14/11/17 Grid System, Runners, Typography, Buttons, Callouts, Sliders, Switches, Menu, Top Bar, Responsive, Paginering  
 15/11/17 Breadcrumbs, Grid, Accordion, Cards, Media Object, Off-canvas, Tables, Tabs, Prograss Bar, Shapes
 
+28/9/17 - 11/10/17 Projects with Foundation framework:  
+Displore  [Displore](http://www.displore.be)  
+Spotify  [Spotify](http://www.enzo.trompeneers.mtantwerp.eu)  
+
 ## Sources
 ### General
 https://foundation.zurb.com/  
@@ -68,4 +72,9 @@ https://foundation.zurb.com/sites/docs/orbit.html
 https://foundation.zurb.com/sites/docs/progress-bar.html  
 ### Shapes
 https://foundation.zurb.com/sites/docs/prototyping-utilities.html  
+### Form and Abide
+https://foundation.zurb.com/sites/docs/forms.html  
+https://foundation.zurb.com/sites/docs/abide.html  
+http://azanebrain.github.io/presentations/foundation5/foundation-docs/components/abide.html  
+
 

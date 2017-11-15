@@ -597,8 +597,168 @@
 		</div>
 		<hr>
 
+		<h1>Form met Abide Validatie</h1>
+		<p>
+			<b>Regex validatie van abide: </b> <br> alpha, alpha_numeric, integer, number, password, card, cvv, email, url, domain, datetime,
+			date, time, dateISO, month_day_year, color
+		</p>
+		<form class="form-horizontal" method="GET" action="#" data-abide novalidate>
+			<div class="grid-container">
+				<div class="grid-x grid-padding-x">
+					<div class="large-6 cell">
+						<label>Voornaam <small>Verplicht</small>
+							<input type="text" placeholder="Voornaam" required pattern="alpha" name="first-name">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
 
+					<div class="large-6 cell">
+						<label>Achternaam <small>Verplicht</small>
+							<input type="text" placeholder="Achternaam" required pattern="alpha" name="last-name">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
 
+					<div class="large-6 cell">
+						<label>Wachtwoord <small>Verplicht</small>
+							<input type="password" placeholder="Wachtwoord" required pattern="^(?=.*[0-9])(?=.*[a-z]).{6,}$" name="password">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+
+					<div class="large-6 cell">
+						<label>Bevestig wachtwoord <small>Verplicht</small>
+							<input type="password" placeholder="Herhaal Wachtwoord" required pattern="^(?=.*[0-9])(?=.*[a-z]).{6,}$" name="password-confirmation" data-equalto="password">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+
+					<div class="large-6 cell">
+						<label>Email <small>Verplicht</small>
+							<input type="text" placeholder="Voornaam@mail.com" required pattern="email" name="email">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+
+					<div class="large-6 cell">
+						<label>Paypal <small>Verplicht</small>
+							<input type="text" placeholder="Voornaam@mail.com" required pattern="email" name="email">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+		
+
+					<div class="large-6 cell">
+						<label>Straat <small>Verplicht</small>
+							<input type="text" placeholder="Straat" required pattern="alpha" name="street">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+		
+					<div class="large-6 cell">
+						<label>Huisnummer <small>Verplicht</small>
+							<input type="text" placeholder="Huisnummer" required pattern="alpha_numeric" name="street-number">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+
+					<div class="large-6 cell">
+						<label>Verdieping nummer <small>Verplicht</small>
+							<input type="text" placeholder="verdieping nummer" required pattern="integer" name="floor">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+		
+					<div class="large-6 cell">
+						<label>Kaartnummer <small>Verplicht</small>
+							<input type="text" placeholder="kaartnummer" required pattern="card" name="cardnumber">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+
+					<div class="large-6 cell">
+						<label>Website Url <small>Verplicht</small>
+							<input type="text" placeholder="www.google.com" required pattern="url" name="website">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+		
+					<div class="large-6 cell">
+						<label>Datum en Tijd <small>Verplicht</small>
+							<input type="text" placeholder="DD-MM-YYYY" required pattern="datetime" name="cardnumber">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+					</div>
+
+					<div class="large-6 cell">
+						<label>Datum <small>Verplicht</small>
+							<input type="text" placeholder="DD-MM-YYYY" required pattern="date" name="date">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+						<hr>
+					</div>
+		
+					<div class="large-6 cell">
+						<label>Tijd <small>Verplicht</small>
+							<input type="text" placeholder="00:00" required pattern="time" name="time">
+							<!-- <span class="error">Foutmelding</span> -->
+						</label>
+						<hr>
+					</div>
+
+					<div class="large-6 cell">
+						<fieldset class="large-6 cell">
+							<legend>Geslacht</legend>
+							<input type="radio" name="gender" value="man" id="man"><label for="man">Man</label>
+							<input type="radio" name="gender" value="vrouw" id="vrouw"><label for="vrouw">Vrouw</label>
+						</fieldset>
+						<hr>
+					</div>
+
+					<div class="large-6 cell">
+						<fieldset class="large-6 cell">
+							<legend>Uiterlijk</legend>
+							<input id="beard" type="checkbox"><label for="beard">Baard</label>
+							<input id="mustache" type="checkbox"><label for="mustache">Snor</label>
+						</fieldset>
+						<hr>
+					</div>
+
+					<div class="large-6 cell">
+						<label>Keuze Menu Dieren
+							<select>
+								<option value="hond">hond</option>
+								<option value="kat">kat</option>
+								<option value="konijn">konijn</option>
+								<option value="paard">paard</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="large-6 cell">
+						<label>Multiple Select Menu Dieren
+							<select multiple>
+								<option value="hond">hond</option>
+								<option value="kat">kat</option>
+								<option value="konijn">konijn</option>
+								<option value="paard">paard</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="large-6 cell">
+						<label for="upload-file" class="button">Upload bestand</label>
+						<input type="file" id="upload-file" class="show-for-sr">
+					</div>
+
+					<div class="large-6 cell">
+						<button type="submit" class="button">
+							Verzenden
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>	
 	</div>
 	
 	<footer>
