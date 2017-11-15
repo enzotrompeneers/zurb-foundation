@@ -8,8 +8,8 @@ Learning ZURB Foundation + Exercises
 14/10/17 Buttons  
 17/10/17 Form Validation Abide  
 13/11/17 Grid System  
-14/11/17 Grid System, Runners, Typography, Buttons, Messages, Sliders, Switches, Menu, Top Bar, Responsive, Paginering
-15/11/17 Breadcrumbs, Grid
+14/11/17 Grid System, Runners, Typography, Buttons, Callouts, Sliders, Switches, Menu, Top Bar, Responsive, Paginering
+15/11/17 Breadcrumbs, Grid, Accordion, Cards
 
 ## Sources
 ### General
@@ -31,7 +31,7 @@ http://robdodson.me/building-a-responsive-grid-with-foundation/
 https://www.tutorialspoint.com/foundation/foundation_the_grid.htm  
 ### Typography
 https://foundation.zurb.com/sites/docs/typography-base.html  
-### Messages
+### Callouts
 https://foundation.zurb.com/sites/docs/close-button.html  
 ### Sliders
 https://foundation.zurb.com/sites/docs/slider.html  
@@ -48,3 +48,7 @@ https://foundation.zurb.com/sites/docs/responsive-navigation.html
 https://foundation.zurb.com/sites/docs/pagination.html  
 ### Breadcrumbs
 https://foundation.zurb.com/sites/docs/breadcrumbs.html  
+### Accordion
+https://foundation.zurb.com/sites/docs/accordion.html  
+### Cards
+https://foundation.zurb.com/sites/docs/card.html  
