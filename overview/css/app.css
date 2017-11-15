@@ -11,4 +11,7 @@ header {
 footer {
   margin-top: 2rem; }
 
+img {
+  max-height: 20rem; }
+
 /*# sourceMappingURL=app.css.map */
