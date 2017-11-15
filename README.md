@@ -60,3 +60,6 @@ https://foundation.zurb.com/sites/docs/off-canvas.html
 https://foundation.zurb.com/sites/docs/table.html  
 ### Tabs
 https://foundation.zurb.com/sites/docs/tabs.html  
+### Badges
+https://foundation.zurb.com/sites/docs/badge.html  
+
