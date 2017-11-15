@@ -62,4 +62,6 @@ https://foundation.zurb.com/sites/docs/table.html
 https://foundation.zurb.com/sites/docs/tabs.html  
 ### Badges
 https://foundation.zurb.com/sites/docs/badge.html  
+### Orbit Carousel
+https://foundation.zurb.com/sites/docs/orbit.html  
 

@@ -540,6 +540,46 @@
 		<span class="badge warning" class="show-for-sr">!</span>
 		<hr>
 
+		<h1>Orbit Carousel</h1>
+		<p>
+			<b>Syntax voor orbit slider</b>: <br> <code>&lt;div class="orbit" role="region" aria-label="Foundation Yeti's" data-orbit&gt;&lt;/div&gt;</code> <br>
+			<b>Syntax voor orbit animatie</b>: <br> <code>data-options="animInFromLeft:fade-in;animInFromRight:fade-in; </code> <br>
+			<code>animOutToLeft:fade-out;animOutToRight:fade-out;"</code> <br>
+		</p>
+		<div class="orbit" role="region" aria-label="Foundation Yeti's" data-orbit>
+			<div class="orbit-wrapper">
+				<div class="orbit-controls">
+					<button class="orbit-previous"><span class="show-for-sr">Vorige Slide</span>&#9664;&#xFE0E;</button>
+					<button class="orbit-next"><span class="show-for-sr">Volgende Slide</span>&#9654;&#xFE0E;</button>
+				</div>
+				<ul class="orbit-container">
+					<li class="is-active orbit-slide">
+						<figure class="orbit-figure">
+						<img class="orbit-image" src="graphics/foundation-yeti.png" alt="foundation yeti">
+						<figcaption class="orbit-caption">Foundation Yeti</figcaption>
+						</figure>
+					</li>
+					<li class="orbit-slide">
+						<figure class="orbit-figure">
+						<img class="orbit-image" src="graphics/foundation-yeti.png" alt="foundation yeti">
+						<figcaption class="orbit-caption">Foundation Yeti</figcaption>
+						</figure>
+					</li>
+					<li class="orbit-slide">
+						<figure class="orbit-figure">
+						<img class="orbit-image" src="graphics/foundation-yeti.png" alt="foundation yeti">
+						<figcaption class="orbit-caption">Foundation Yeti</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+			<nav class="orbit-bullets">
+				<button class="is-active" data-slide="0"><span class="show-for-sr">Foundation yeti</span><span class="show-for-sr">Huidige slide</span></button>
+				<button data-slide="1"><span class="show-for-sr">Foundation yeti</span></button>
+				<button data-slide="2"><span class="show-for-sr">Foundation yeti</span></button>
+			</nav>
+		</div>
+
 	</div>
 	
 	<footer>
