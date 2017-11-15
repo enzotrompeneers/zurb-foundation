@@ -8,8 +8,8 @@ Learning ZURB Foundation + Exercises
 14/10/17 Buttons  
 17/10/17 Form Validation Abide  
 13/11/17 Grid System  
-14/11/17 Grid System, Runners, Typography, Buttons, Callouts, Sliders, Switches, Menu, Top Bar, Responsive, Paginering
-15/11/17 Breadcrumbs, Grid, Accordion, Cards, Media Object, Off-canvas, Tables, Tabs
+14/11/17 Grid System, Runners, Typography, Buttons, Callouts, Sliders, Switches, Menu, Top Bar, Responsive, Paginering  
+15/11/17 Breadcrumbs, Grid, Accordion, Cards, Media Object, Off-canvas, Tables, Tabs, Prograss Bar
 
 ## Sources
 ### General
@@ -64,4 +64,6 @@ https://foundation.zurb.com/sites/docs/tabs.html
 https://foundation.zurb.com/sites/docs/badge.html  
 ### Orbit Carousel
 https://foundation.zurb.com/sites/docs/orbit.html  
+### Progress Bar
+https://foundation.zurb.com/sites/docs/progress-bar.html  
 
