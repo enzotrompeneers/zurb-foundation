@@ -1,6 +1,9 @@
 # zurb-foundation
 Learning ZURB Foundation + Exercises
 
+Look folder 'overview' for my own creation documentation about foundation:  
+Overview:  [Overview Foundation](https://github.com/enzotrompeneers/zurb-foundation/tree/master/overview)  
+
 ## Log
 28/9/17 Intro ZURB Foundation and custom download
 9/10/17 Menu  
@@ -12,8 +15,8 @@ Learning ZURB Foundation + Exercises
 15/11/17 Breadcrumbs, Grid, Accordion, Cards, Media Object, Off-canvas, Tables, Tabs, Prograss Bar, Shapes
 
 28/9/17 - 11/10/17 Projects with Foundation framework:  
-Displore  [Displore](http://www.displore.be)  
-Spotify  [Spotify](http://www.enzo.trompeneers.mtantwerp.eu)  
+Displore:  [www.displore.be](http://www.displore.be)  
+Spotify contest:  [www.spotify-contest.be](http://www.enzo.trompeneers.mtantwerp.eu)  
 
 ## Sources
 ### General
