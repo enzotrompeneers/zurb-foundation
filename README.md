@@ -9,7 +9,7 @@ Learning ZURB Foundation + Exercises
 17/10/17 Form Validation Abide  
 13/11/17 Grid System  
 14/11/17 Grid System, Runners, Typography, Buttons, Callouts, Sliders, Switches, Menu, Top Bar, Responsive, Paginering
-15/11/17 Breadcrumbs, Grid, Accordion, Cards, Media Object, Off-canvas
+15/11/17 Breadcrumbs, Grid, Accordion, Cards, Media Object, Off-canvas, Tables
 
 ## Sources
 ### General
@@ -56,3 +56,5 @@ https://foundation.zurb.com/sites/docs/card.html
 https://foundation.zurb.com/sites/docs/media-object.html  
 ### Off-canvas
 https://foundation.zurb.com/sites/docs/off-canvas.html  
+### Tables
+https://foundation.zurb.com/sites/docs/table.html  
